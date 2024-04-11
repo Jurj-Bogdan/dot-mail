@@ -2,7 +2,6 @@
 
 DotKernel mail component based on [laminas-mail](https://github.com/laminas/laminas-mail)
 
-
 ![OSS Lifecycle](https://img.shields.io/osslifecycle/dotkernel/dot-mail)
 ![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-mail/4.1.1)
 
@@ -16,10 +15,10 @@ DotKernel mail component based on [laminas-mail](https://github.com/laminas/lami
 
 [![SymfonyInsight](https://insight.symfony.com/projects/1995ea7c-3b34-4eee-ac48-3571860d0307/big.svg)](https://insight.symfony.com/projects/1995ea7c-3b34-4eee-ac48-3571860d0307)
 
+## Configuration
 
-### Configuration
+### Mail - Sendmail
 
-#### Mail - Sendmail
 If your server has Sendmail installed, update the `config/autoload/mail.local.php.dist` file by setting the `transport` key like below
 
 ```php
@@ -35,7 +34,8 @@ return [
 ]
 ```
 
-#### Mail - SMTP
+### Mail - SMTP
+
 If you want your application to send mails on e.g. registration, contact, then edit the file `config/autoload/mail.local.php`.  Set the `transport`, `message_options` and `smtp_options` keys like below.
 
 Under `message_options` key:
@@ -134,7 +134,6 @@ if (! $result->isValid()) {
 
 **Note : Invalid e-mail messages will not be sent.**
 
-
 ### Logging outgoing emails
 
 Optionally, you can keep a log of each successfully sent email. This might be useful when you need to know if/when a specific email has been sent out to a recipient.
@@ -155,10 +154,12 @@ return [
     ]
 ];
 ```
+
 To disable it, set the value of `sent` to `null`.
 
 ### Saving a copy of an outgoing mail into a folder
-#### Valid only for SMTP Transport
+
+### Valid only for SMTP Transport
 
 First, make sure the `save_sent_message_folder` key is present in config file `mail.local.php` under `dot_mail.default`. Below you can see its placement and default value.
 

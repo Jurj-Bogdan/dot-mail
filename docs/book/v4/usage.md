@@ -1,6 +1,6 @@
 # Usage
 
-### Sending an e-mail
+## Sending an e-mail
 
 Below is an example of how to use the email in the most basic way. You can add your own code to it e.g. to get the user data from a User object or from a config file, to use a template for the body.
 
@@ -32,7 +32,8 @@ try {
 }
 ```
 
-### Testing if an e-mail message is valid
+## Testing if an e-mail message is valid
+
 After sending an e-mail you can check if the message was valid or not.
 The `$this->mailService->send()->isValid()` method call will return a boolean value.
 If the returned result is `true`, the e-mail was valid, otherwise the e-mail was invalid.
@@ -48,15 +49,17 @@ if (! $result->isValid()) {
     error_log($result->getMessage());
 }
 ```
+
 **Note : Invalid e-mail messages will not be sent.**
 
-### Logging outgoing emails
+## Logging outgoing emails
+
 Optionally, you can keep a log of each successfully sent email. This might be useful when you need to know if/when a specific email has been sent out to a recipient.
 
 Logs are stored in the following format: `[YYYY-MM-DD HH:MM:SS]: {"subject":"Test subject","to":["Test Account <test@dotkernel.com>"],"cc":[],"bcc":[]}`.
 
 Each email is saved via the `dotkernel/dot-log` component in the shown `JSON` format, in the single file configured under the `dot-mail.log.sent` key. To disable it, set the value of `dot-mail.log.sent` to `null`.
 
-### Transport usage
+## Transport usage
 
 [Transports](transports.md)
