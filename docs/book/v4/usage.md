@@ -49,6 +49,7 @@ if (! $result->isValid()) {
     error_log($result->getMessage());
 }
 ```
+
 **Note : Invalid e-mail messages will not be sent.**
 
 ## Logging outgoing emails
