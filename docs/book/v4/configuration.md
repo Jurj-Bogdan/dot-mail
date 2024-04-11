@@ -18,7 +18,7 @@ $this->mailService->getMessage()->setTo("receiver@email.com");
 $this->mailService->getMessage()->addTo("receiver@email.com");
 ```
 
-### Transport configuration
+## Transport configuration
 
 `dot-mail` uses the `transport` key under the main `dot_mail` configuration key to select the email transport.
 It has four email transport classes available by default (`Sendmail`, `Smtp`, `File`, `InMemory`), one of which is to be added under the `dot_mail.transport` key for use.
@@ -46,7 +46,7 @@ Using `Laminas\Mail\Transport\File` as the transport will require uncommenting t
 'callback' => static fn() => sprintf('DotMail%d_%s.log', time(), 'customFormat'),
 ```
 
-### Logging configuration
+## Logging configuration
 
 Uncommenting the `dot-mail.log` key will save a copy of all sent emails' subject, recipient addresses, cc and bcc addresses alongside a timestamp.
 In order to enable it, make sure that your `mail.local.php` has the below `log` configuration under the `dot_mail` key:

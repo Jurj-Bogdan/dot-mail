@@ -134,7 +134,6 @@ if (! $result->isValid()) {
 
 **Note : Invalid e-mail messages will not be sent.**
 
-
 ### Logging outgoing emails
 
 Optionally, you can keep a log of each successfully sent email. This might be useful when you need to know if/when a specific email has been sent out to a recipient.
@@ -155,9 +154,11 @@ return [
     ]
 ];
 ```
+
 To disable it, set the value of `sent` to `null`.
 
 ### Saving a copy of an outgoing mail into a folder
+
 #### Valid only for SMTP Transport
 
 First, make sure the `save_sent_message_folder` key is present in config file `mail.local.php` under `dot_mail.default`. Below you can see its placement and default value.
