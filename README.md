@@ -1,6 +1,11 @@
 # dot-mail
 
-DotKernel mail component based on [laminas-mail](https://github.com/laminas/laminas-mail)
+>[!IMPORTANT]
+> dot-mail is a wrapper on top of [laminas-mail](https://github.com/laminas/laminas-mail)
+> 
+> ![OSS Lifecycle](https://img.shields.io/osslifecycle/laminas/laminas-mail)
+
+## dot-mail badges
 
 ![OSS Lifecycle](https://img.shields.io/osslifecycle/dotkernel/dot-mail)
 ![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-mail/4.1.1)
