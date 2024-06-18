@@ -1,6 +1,6 @@
 # dot-mail
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > dot-mail is a wrapper on top of [laminas-mail](https://github.com/laminas/laminas-mail)
 >
 > ![OSS Lifecycle](https://img.shields.io/osslifecycle/laminas/laminas-mail)
