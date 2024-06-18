@@ -1,5 +1,10 @@
 # Overview
 
-`dot-mail` is DotKernel's mailing service based on `laminas/laminas-mail`.
+> [!IMPORTANT]
+> dot-mail is a wrapper on top of [laminas-mail](https://github.com/laminas/laminas-mail)
+>
+> ![OSS Lifecycle](https://img.shields.io/osslifecycle/laminas/laminas-mail)
 
-By adding the option to log the results of the mailing process it provides the user with more information and greater control.
+## Extra features
+
+-  the option to log the results of the mailing process it provides the developer with more information and greater control.
